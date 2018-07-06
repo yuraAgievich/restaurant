@@ -1,0 +1,617 @@
+body {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    position: relative;
+}
+
+.bgFitstSlide {
+    background: url(../img/rest.jpg) no-repeat 0 50%;
+    background-size: cover;
+}
+
+/*------------------------------------------------------------header-------------------------------------------------*/
+
+.bgHeader, .bgFooter {
+    padding: 25px 0;
+    background: rgba(71, 65, 60, 0.9);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo>span {
+    color: #d2c970;
+    padding: 0px 6px;
+    border-bottom: 1px solid #d2c970;
+    font-size: 24px;
+    display: inline-block;
+}
+
+header>.contentHead {
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #d2c970;
+}
+
+header {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+
+/*------------------------------------------------------------present-------------------------------------------------*/
+.bgOffers {
+    background: #f1f1e6;
+}
+
+.present {
+    padding: 50px 0;
+}
+
+.presentText {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.presentText h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 30px black;
+}
+
+.presentText p {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+    padding: 30px 0 55px 0;
+    line-height: 1.6;
+    text-shadow: 2px 2px 30px black;
+}
+
+.presentText span{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 60px;
+    background: #d44934;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px #eadede;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.presentText span:hover {
+    box-shadow: none;
+}
+
+.presentVideo {
+    margin: 50px 0;
+}
+
+.tempVideo video {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 30px 30px 50px 0 rgba( 0, 0, 0, 0.4 );
+}
+
+/*-----------------------------------------contactsRestaurant------------------------------------------------------*/
+
+.contactsRestaurant {
+    position: absolute;
+    max-width: 90%;
+    top: 1%;
+    left: 5%;
+    background: #fff;
+    z-index:-888;
+    opacity:0;
+    margin: 0 auto;
+    padding: 60px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:1px solid #d44934;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #584a3e;
+    transition: opacity 1s;
+}
+
+.contactsRestaurant.active {
+    z-index:888;
+    opacity: 1;
+}
+
+
+.contactsContent {
+    float: left;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contactsContent .fab, .contactsContent .fas, .contactsContent .far {
+    font-size: 20px;
+    color: #d44934;
+    padding: 0 10px 0 0;
+
+}
+
+.contactsRestaurant .thisForm {
+    float: right;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#closeContacts::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f410";
+    font-size: 40px;
+    color: #d44934;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: -8px;
+
+}
+
+/*------------------------------------------------------------offers-----------------------------------------------*/
+
+.descOffers {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.descOffers  h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #584a3e;
+    padding-bottom: 30px;
+}
+
+.slideTextDesc{
+    max-height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.slideTextDesc:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(241, 241, 230, 0) 0%, rgba(241, 241, 230, 0.5) 50%, rgb(241, 241, 230) 100%);
+    pointer-events: none;
+}
+
+.slideOpen {
+    max-height: 999px;
+    transition: max-height 1s linear;
+}
+
+.slideOpen:after {
+    display: none;
+}
+
+
+.descOffers span {
+    background: transparent;
+    color: #d44934;
+    border: 2px solid #d44934;
+    box-shadow: none;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 60px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.descOffers span:hover {
+    color: #fff;
+    background: #d44934;
+}
+
+.offer h4 {
+    color: #4c4c4c;
+    font-size: 24px;
+    margin: 70px 0 0 0;
+    padding-bottom: 25px;
+}
+
+.offer p {
+    color: #4c4c4c;
+}
+
+.fab, .fas, .far {
+    font-size: 70px;
+    color: #7be267;
+    margin:10px 0;
+}
+
+/*.fa-car::before, .fa-smile::before,.fa-money-bill-alt:before {
+    color: #c95959
+}*/
+
+.bgBenefits {
+    background: #47413c;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.allBenefits h2{
+    font-size: 36px;
+    color: #fff8b0;
+    text-shadow: none;
+    margin-bottom: 40px;
+}
+
+.benefits {
+    padding:30px 40px;
+}
+
+.benefits>h4 {
+    color: #d2c970;
+}
+
+.benefits>span {
+    color: #ffffff;
+    text-shadow: 2px 2px 10px #000;
+}
+
+/*------------------------------------------TABS-----------------------------------------*/
+.controlProd {
+
+}
+
+.controlProd h2 {
+    margin: 10px 0px 50px 0;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 4px #000;
+}
+
+#largeImgs {
+
+    position: relative;
+    text-align: center;
+}
+
+#largeImgs>img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.largeImg {
+    box-shadow: -30px 30px 50px 0 rgba( 0, 0, 0, 0.4 );
+}
+
+.smallImgs {
+    max-width:100%;
+    position: relative;
+    text-align: center;
+    bottom: 55px;
+}
+
+.smallImg {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 65px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.bgProductsImg {
+    background: url(../img/controlProd.jpg) no-repeat 100% 0;
+    background-size: cover;
+}
+
+.bgProductsColor {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, .8);
+    background-size: cover;
+}
+
+.contentProd {
+    padding: 30px 20px;
+    color: #fcfff0;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px #024101;
+}
+
+
+/*----------------------------------otzivy------------------------------------*/
+
+.bgClients {
+    background: #f1f1e6;
+    padding: 50px 0;
+}
+
+.clients {
+    text-align: center;
+}
+
+.clients h2 {
+    margin-bottom: 25px;
+}
+
+.client img {
+    margin: 30px 0;
+}
+
+/*----------------------------------------FORM---------------------------------------------*/
+
+.bgForm  {
+    padding: 50px 0;
+}
+
+.bgForm h2 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 60px 0;
+    color: #584a3e;
+}
+
+.thisForm {
+    position: relative;
+    padding: 30px 50px;
+    background: #d449340d;
+    box-shadow: 20px 20px 53px 0 rgba( 0, 0, 0, 0.4 );
+}
+
+.thisForm>form input[type="text"],.thisForm>form input[type="email"],.thisForm>form input[type="button"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #d44934;
+    outline: none;
+    border-radius: 3px;
+}
+
+.thisForm>form input:disabled {
+    background: #e16a5836;
+}
+
+
+.thisForm>form input[type="button"]{
+    color: #d44934;
+    background: #fff;
+    border: 2px solid #d44934;
+    transition: background 500ms, color 500ms;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.thisForm>form input[type="button"]:hover {
+    color: #fff;
+    background: #d44934;
+}
+
+input::-webkit-input-placeholder       {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+input::-moz-placeholder                {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+input:-moz-placeholder                 {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+input:-ms-input-placeholder            {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+input:focus::-webkit-input-placeholder {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+input:focus::-moz-placeholder          {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+input:focus:-moz-placeholder           {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+input:focus:-ms-input-placeholder      {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+
+
+textarea::-webkit-input-placeholder       {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+textarea::-moz-placeholder                {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+textarea:-moz-placeholder                 {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+textarea:-ms-input-placeholder            {color:#d44934; opacity: 1; transition: opacity 500ms linear;}
+textarea:focus::-webkit-input-placeholder {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+textarea:focus::-moz-placeholder          {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+textarea:focus:-moz-placeholder           {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+textarea:focus:-ms-input-placeholder      {color:#d44934; opacity: 0; transition: opacity 500ms linear;}
+
+
+.informForm {
+    padding: 100px 25px 35px 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.thisForm #error, .thisForm #okey {
+    position: absolute;
+    color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    bottom: 40%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.thisForm #error {
+    left: 23%;
+    background: #d44934a6;
+}
+
+.thisForm #okey {
+    left: 30%;
+    background: #7be267bf;
+}
+
+.thisForm #okey.active, .thisForm #error.active {
+    opacity: 1;
+}
+
+    /*--------------------------------------FOOTER----------------------------------------------------*/
+
+.contentFooter{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contentFooter span{
+    display: inline-block;
+    width: 100%;
+    color: #d2c970;
+}
+
+.contentFooter i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #d2c970;
+}
+
+
+/*---------------------------------scroll Top*------------------------------*/
+
+#buttonScrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity:0;
+    transition: opacity 1000ms;
+}
+
+#buttonScrollTop.active {
+    opacity:1;
+}
+
+#buttonScrollTop::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f151";
+    font-size: 40px;
+    color: #d44934;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------@media (min-width: 992px)------------------------------------*/
+
+
+
+@media (min-width: 768px) {
+
+    #largeImgs > img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contentProd {
+        text-align: center;
+    }
+
+    .smallImgs {
+        bottom: 50px;
+    }
+
+    .smallImg {
+        width: 65px;
+    }
+
+    .informForm {
+        padding: 55px 25px 35px 0;
+    }
+
+    .thisForm #error {
+        bottom: 0;
+        left: -310px;
+
+    }
+
+    .thisForm #okey {
+        bottom: 0;
+        left: -236px;
+
+    }
+
+
+
+}
+
+@media(min-width: 992px) {
+
+    .presentText h1 {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .presentText p {
+        padding: 30px 0 20px 0;
+    }
+
+    .contentProd {
+        padding: 10px;
+    }
+
+    .smallImg {
+        width: 55px;
+    }
+
+    #largeImgs>img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contactsContent {
+        float: left;
+        width: 50%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .contactsRestaurant .thisForm {
+        margin: 0px auto;
+        text-align: center;
+        float: right;
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .presentText h1 {
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
+
+    .presentText p {
+        font-size: 24px;
+        padding: 30px 0 55px 0;
+    }
+
+    .smallImg {
+        width: 65px;
+    }
+
+    .contentProd {
+        padding: 55px 10px;
+    }
+
+    .informForm {
+        padding: 100px 25px 35px 0;
+    }
+
+
+
+}
